@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap");
+
+:root {
+  --clr-primary: #ff6b82;
+  --clr-primary-light: #fff9fa;
+  --clr-secondary: #c8c8c8;
+  --clr-black: #000;
+  --clr-white: #fff;
+
+  --fs-lg: 2rem;
+  --fs-md: 1.6rem;
+  --fs-sm: 1.4rem;
+  --fs-xs: 1.2rem;
+  --fs-xxs: 1rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%; /* setting rem unit as multiple of 10px instead of 16px */
+  height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-size: var(--fs-md); /* setting font size to be 16px for texts */
+  font-family: "Inter", sans-serif;
+}
+
+form {
+  width: clamp(280px, 100%, 390px);
+  margin: 50px auto;
+}
+
+header h1 {
+  text-align: center;
+  font-size: var(--fs-lg);
+  color: var(--clr-primary);
+  font-weight: 600;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.select-container > section:first-of-type {
+  gap: 20px;
+}
+
+.select-container input[type="radio"] {
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 1.5px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid var(--clr-secondary);
+  border-radius: 50%;
+}
+
+.select-container [type="radio"]:checked {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
+}
+
+.select-box {
+  box-shadow: inset 0 0 0 0.9px var(--clr-secondary);
+  /* border: 0.9px solid var(--clr-secondary); */
+  padding: 25px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.select-box.selected {
+  background-color: var(--clr-primary-light);
+  box-shadow: inset 0 0 0 2px var(--clr-primary);
+}
+
+.select-box > div {
+  flex: 1;
+}
+
+.discount {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  padding: 2px 6px;
+  font-size: var(--fs-xs);
+  margin-left: 10px;
+}
+
+.input-label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.input-label + p {
+  font-size: var(--fs-sm);
+  margin-top: 5px;
+}
+
+.price__discounted {
+  font-weight: 500;
+  font-size: var(--fs-sm);
+  margin: 0;
+}
+
+.price__original {
+  font-size: var(--fs-xxs);
+  color: var(--clr-secondary);
+  text-decoration: line-through;
+  margin-top: 5px;
+}
+
+.choice-container {
+  gap: 5px;
+  display: none;
+}
+
+.choice-container.show {
+  display: flex;
+}
+
+.choice-container .row {
+  gap: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.choice-container .row:not(:first-child)::before {
+  font-size: var(--fs-xxs);
+  content: "#1";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.choice-container .row:nth-child(3)::before {
+  content: "#2";
+}
+
+.choice-container .row > * {
+  flex-basis: 64px;
+}
+
+.choice-container .row:first-child {
+  font-size: var(--fs-xxs);
+  margin-top: 24px;
+}
+
+section.billing {
+  margin: 15px 0 20px;
+  font-size: var(--fs-sm);
+}
+
+section.billing :first-child {
+  color: var(--clr-primary);
+  font-weight: 500;
+}
+
+.btn {
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+  padding: 13px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  gap: 8px;
+  font-size: var(--fs-xs);
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn svg {
+  width: 15px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: right;
+  color: var(--clr-secondary);
+}
+
+.select-box:nth-of-type(2) {
+  position: relative;
+}
+
+.popular-label {
+  position: absolute;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  text-transform: uppercase;
+  width: 120px;
+  padding: 5px 11px;
+  top: -5px;
+  right: 5px;
+}
+
+.popular-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  z-index: -1;
+  width: 130px;
+  border-bottom: 6px solid #d7445b;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}

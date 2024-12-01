@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="utilities.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form class="form-container">
+        <header>
+          <h1 class="lined-heading">YAY! It’s BOGO</h1>
+        </header>
+
+        <article class="select-container">
+          <section class="flex flex-col">
+            <!-- selection boxes -->
+            <div class="flex align-start select-box" data-radio="1unit">
+              <input type="radio" name="unit-selection" id="1unit" />
+              <div>
+                <section class="flex justify-between">
+                  <div>
+                    <label for="1unit" class="input-label"
+                      >1 Unit<span class="discount">10% Off</span></label
+                    >
+                    <p>Standard Price</p>
+                  </div>
+                  <div>
+                    <p class="price__discounted">$10.00 USD</p>
+                    <p class="price__original">$24.00 USD</p>
+                  </div>
+                </section>
+                <section class="choice-container flex flex-col">
+                  <!-- make color and size seleciton in this section -->
+                  <div class="row flex">
+                    <span>Size</span>
+                    <span>Colour</span>
+                  </div>
+
+                  <div class="row flex">
+                    <select name="size" id="size" class="custom-select">
+                      <option value="small" selected>S</option>
+                      <option value="medium">M</option>
+                      <option value="large">L</option>
+                    </select>
+                    <select name="color" id="color" class="custom-select">
+                      <option value="red" selected>Black</option>
+                      <option value="green">Green</option>
+                      <option value="blue">Blue</option>
+                    </select>
+                  </div>
+                  <div class="row flex">
+                    <select name="size" id="size" class="custom-select">
+                      <option value="small" selected>S</option>
+                      <option value="medium">M</option>
+                      <option value="large">L</option>
+                    </select>
+                    <select name="color" id="color" class="custom-select">
+                      <option value="red" selected>Black</option>
+                      <option value="green">Green</option>
+                      <option value="blue">Blue</option>
+                    </select>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="flex align-start select-box" data-radio="2unit">
+              <span class="popular-label">Most popular</span>
+              <input type="radio" name="unit-selection" id="2unit" checked />
+              <div>
+                <section class="flex justify-between">
+                  <div>
+                    <label for="2unit" class="input-label"
+                      >2 Unit<span class="discount">20% Off</span></label
+                    >
+                    <p>Recommended Price</p>
+                  </div>
+                  <div>
+                    <p class="price__discounted">$18.00 USD</p>
+                    <p class="price__original">$24.00 USD</p>
+                  </div>
+                </section>
+                <section class="choice-container show flex flex-col">
+                  <!-- make color and size seleciton in this section -->
+                  <div class="row flex">
+                    <span>Size</span>
+                    <span>Colour</span>
+                  </div>
+
+                  <div class="row flex">
+                    <select name="size" id="size" class="custom-select">
+                      <option value="small" selected>S</option>
+                      <option value="medium">M</option>
+                      <option value="large">L</option>
+                    </select>
+                    <select name="color" id="color" class="custom-select">
+                      <option value="red" selected>Black</option>
+                      <option value="green">Green</option>
+                      <option value="blue">Blue</option>
+                    </select>
+                  </div>
+                  <div class="row flex">
+                    <select name="size" id="size" class="custom-select">
+                      <option value="small" selected>S</option>
+                      <option value="medium">M</option>
+                      <option value="large">L</option>
+                    </select>
+                    <select name="color" id="color" class="custom-select">
+                      <option value="red" selected>Black</option>
+                      <option value="green">Green</option>
+                      <option value="blue">Blue</option>
+                    </select>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="flex align-start select-box" data-radio="3unit">
+              <input type="radio" name="unit-selection" id="3unit" />
+              <div>
+                <section class="flex justify-between">
+                  <div>
+                    <label for="3unit" class="input-label"
+                      >3 Unit<span class="discount">30% Off</span></label
+                    >
+                    <p>Premium Price</p>
+                  </div>
+                  <div>
+                    <p class="price__discounted">$24.00 USD</p>
+                    <p class="price__original">$24.00 USD</p>
+                  </div>
+                </section>
+                <section class="choice-container flex flex-col">
+                  <!-- make color and size seleciton in this section -->
+                  <div class="row flex">
+                    <span>Size</span>
+                    <span>Colour</span>
+                  </div>
+
+                  <div class="row flex">
+                    <select name="size" id="size" class="custom-select">
+                      <option value="small" selected>S</option>
+                      <option value="medium">M</option>
+                      <option value="large">L</option>
+                    </select>
+                    <select name="color" id="color" class="custom-select">
+                      <option value="red" selected>Black</option>
+                      <option value="green">Green</option>
+                      <option value="blue">Blue</option>
+                    </select>
+                  </div>
+                  <div class="row flex">
+                    <select name="size" id="size" class="custom-select">
+                      <option value="small" selected>S</option>
+                      <option value="medium">M</option>
+                      <option value="large">L</option>
+                    </select>
+                    <select name="color" id="color" class="custom-select">
+                      <option value="red" selected>Black</option>
+                      <option value="green">Green</option>
+                      <option value="blue">Blue</option>
+                    </select>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </section>
+
+          <section class="flex justify-between billing">
+            <span> Free Delivery </span>
+            <span> Total : $18.00 USD </span>
+          </section>
+
+          <button
+            class="btn inline-flex align-center justify-center"
+            type="button"
+          >
+            <span class="icon-span">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.99998 3.33334V12.6667M3.33331 8.00001H12.6666"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span> Add to Cart </span>
+          </button>
+        </article>
+
+        <footer>
+          <p>@ Powered by Pumper</p>
+        </footer>
+      </form>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
