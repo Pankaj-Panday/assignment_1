@@ -17,6 +17,7 @@
 *,
 *::after,
 *::before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: inherit;
 }
@@ -54,6 +55,8 @@ header h1 {
 }
 
 .select-container input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   /* create custom radiobutton appearance */
   display: inline-block;
@@ -72,6 +75,7 @@ header h1 {
 }
 
 .select-box {
+  -webkit-box-shadow: inset 0 0 0 0.9px var(--clr-secondary);
   box-shadow: inset 0 0 0 0.9px var(--clr-secondary);
   /* border: 0.9px solid var(--clr-secondary); */
   padding: 25px;
@@ -81,10 +85,13 @@ header h1 {
 
 .select-box.selected {
   background-color: var(--clr-primary-light);
+  -webkit-box-shadow: inset 0 0 0 2px var(--clr-primary);
   box-shadow: inset 0 0 0 2px var(--clr-primary);
 }
 
 .select-box > div {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
@@ -125,6 +132,8 @@ header h1 {
 }
 
 .choice-container.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -140,6 +149,8 @@ header h1 {
   position: absolute;
   left: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .choice-container .row:nth-child(3)::before {
@@ -147,6 +158,7 @@ header h1 {
 }
 
 .choice-container .row > * {
+  -ms-flex-preferred-size: 64px;
   flex-basis: 64px;
 }
 
